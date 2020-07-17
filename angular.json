@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "azdine-dev"
+    }
+  },
+  "defaultProject": "azdine-dev",
+  "cli": {
+    "analytics": false
+  }
 }
