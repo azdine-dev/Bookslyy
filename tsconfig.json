@@ -8,10 +8,18 @@
   "files": [],
   "references": [
     {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.app.json",
     },
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ],
+
+  "compilerOptions": {
+    "skipLibCheck":true,
+    "composite": true,
+    "experimentalDecorators":true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
