@@ -1,6 +1,6 @@
 # Bookslyy
  This is a web application for managing E-books .
- (Developed using Angular)
+ (Developed using Angular and Firebase )
 
 ## Demo 
 See Demo at :
