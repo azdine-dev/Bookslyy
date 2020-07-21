@@ -14,10 +14,7 @@ export class BookListComponent implements OnInit, OnDestroy {
 
   books: Book[];
   booksSubscription: Subscription;
-  bookForm: FormGroup;
-  fileIsUploading = false;
-  fileUrl: string;
-  fileUploaded = false;
+  
 
   constructor(private booksService: BooksService, private router: Router) {}
 
@@ -27,6 +24,7 @@ export class BookListComponent implements OnInit, OnDestroy {
         this.books = books;
       }
     );
+    this.booksService.getBooks();
     this.booksService.emitBooks();
   }
 
